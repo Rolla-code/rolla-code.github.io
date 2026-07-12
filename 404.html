@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page not found — Rolland Ashiteye</title>
+    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <script>
+        (function () {
+            try {
+                var saved = localStorage.getItem('theme');
+                if (saved === 'light' || saved === 'dark') {
+                    document.documentElement.setAttribute('data-theme', saved);
+                }
+            } catch (e) {}
+        })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .notfound {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        .notfound-code {
+            font-family: var(--font-display);
+            font-size: clamp(4rem, 14vw, 8rem);
+            font-weight: 700;
+            line-height: 1;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin: 0 0 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <main class="notfound">
+        <div>
+            <p class="notfound-code">404</p>
+            <h1>This page doesn't exist</h1>
+            <p style="color: var(--text-muted); max-width: 40ch; margin-inline: auto;">
+                The link may be broken, or the page may have moved during the site redesign.
+            </p>
+            <p><a class="btn btn-primary" href="/">Back to home</a></p>
+        </div>
+    </main>
+</body>
+</html>
